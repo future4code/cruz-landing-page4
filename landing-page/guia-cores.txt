@@ -1,0 +1,3 @@
+laranja escuro - #FF914D
+laranja claro - #FFBD59
+cinza - #E2E2E2
