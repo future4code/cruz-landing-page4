@@ -11,7 +11,7 @@ cinza - #E2E2E2 */
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* font-weight: 400; */
+    font-weight: 400;
 }
 
 /*** CONFIGURAÇÃO GERAL (FIM) ***/
@@ -72,6 +72,105 @@ cinza - #E2E2E2 */
 
 /*** SEÇÃO CARTÃO (FIM) ***/
 
+/*** FOOTER INÍCIO (INICIO) ***/
+
+
+footer {
+    background-color: #FF914D;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #FFFFFF;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+}
+
+footer > div > p:first-child{
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.titulo-institucional {
+    width: 5em;
+    border-bottom: 3px solid #FFBD59;
+    padding-bottom: 8px;
+}
+.texto-footer {
+    text-align: left;
+}
+
+.titulo-atendimento {
+    width: 6em;
+    border-bottom: 3px solid #FFBD59;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+.div-apps {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-apps > a > img {
+    width: 28%;
+}
+
+.first-icon-footer {
+    border-top: 3px solid #FFBD59;
+    padding: 15px 0 4px 0;
+}
+
+.texto-tel {
+    margin-bottom: 15px;
+}
+
+.container-footer:first-child {
+    text-align: center;
+}
+
+.container-institucional {
+    margin-left: 60px;
+}
+
+.container-institucional > ul > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icones-redes-sociais {
+    margin: 10px;
+}
+
+.icones-redes-sociais > a > i {
+    color: white;
+    background-color: #FFBD59;
+    border-radius: 50%;
+    font-size: 1.1em;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(55, 54, 54);
+    text-align: center;
+    margin-right: 5px;
+}
+
+.copyright {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** FOOTER (FIM) ***/
+
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
 /*** SEÇÃO CARTÃO RESPONSIVO (INICIO) ***/
@@ -93,31 +192,43 @@ cinza - #E2E2E2 */
 
 .div-botao-cartao-e-texto {
     margin-top: 30px;
-    order: 3;   
+    order: 3;
 }
 
 /*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
 
+/*** FOOTER RESPONSIVO (INICIO) ***/
 
-
-/*** FOOTER (INICIO) ***/
-
-
-
-/*** FOOTER (FIM) ***/
-
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* 
+.container-footer {
+    width: 100vw;
+    margin: 25px 10px;
+}
 
-.botao{margin: 30px 0 30px 0;}
-.botao a{background: #FF914D;
-padding:10px;
-border-radius:10px;
-color:white;
-text-decoration:none;
-transition: all 2s ease;}
-.botao a:hover{background: #FFBD59;}
+.container-institucional {
+    width: 17em;
+}
 
-*/
+.container-canais-atendimento,
+.titulo-atendimento {
+    margin-top: 10px;
+}
 
+.titulo-atendimento {
+    width: 11.9em;
+}
+
+.div-apps {
+    margin: 20px 0 60px 90px;
+}
+
+
+/*** FOOTER RESPONSIVO (FIM) ***/
