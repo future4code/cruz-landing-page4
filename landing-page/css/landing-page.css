@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* laranja escuro - #FF914D
+laranja claro - #FFBD59
+cinza - #E2E2E2 */
+
+/*** CONFIGURAÇÃO GERAL (INICIO) ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 400; */
+}
+
+/*** CONFIGURAÇÃO GERAL (FIM) ***/
+
+/*** SEÇÃO CARTÃO (INICIO) ***/
+
+.container-cartao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFBD59;
+}
+
+.container-cartao > h2 {
+    order: -1;
+    margin: 2em 1em 15px 1em;
+    font-size: 2.2em;
+    text-align: end;
+}
+
+.div-botao-cartao-e-texto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-cartao {
+    color: white;
+    order: 2;
+    text-align: justify;
+    margin: 0 25px 10px 15px;
+    order: 0;
+    height: fit-content;
+}
+
+.button-cartao {
+    color: #FFFFFF;
+    background-color: #FF914D;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 30px 25px 30px 0;
+    transition: all 2s ease;
+}
+
+.button-cartao:hover {
+    background-color: #FF914D;
+}
+
+.img-cartao {
+    width: 100%;
+    order: 0;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+/*** SEÇÃO CARTÃO (FIM) ***/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+
+/*** SEÇÃO CARTÃO RESPONSIVO (INICIO) ***/
+
+.container-cartao {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBD59;
+}
+
+.img-cartao {
+    order: 1;
+}
+
+.container-cartao > h2 {
+    order: 2;
+    margin: 1.2em 1em 0 1em;
+}
+
+.div-botao-cartao-e-texto {
+    margin-top: 30px;
+    order: 3;   
+}
+
+/*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
+
+
+
+/*** FOOTER (INICIO) ***/
+
+
+
+/*** FOOTER (FIM) ***/
+
+}
+
+/* 
+
+.botao{margin: 30px 0 30px 0;}
+.botao a{background: #FF914D;
+padding:10px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+transition: all 2s ease;}
+.botao a:hover{background: #FFBD59;}
+
+*/
+
