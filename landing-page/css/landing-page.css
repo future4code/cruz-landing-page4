@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
 
-/* laranja escuro - #FF914D
-laranja claro - #FFBD59
-cinza - #E2E2E2 */
-
-/*** CONFIGURAÇÃO GERAL (INICIO) ***/
+/*** CONFIGURAÇÃO GERAL (INÍCIO) ***/
 
 * {
     margin: 0;
@@ -16,7 +12,7 @@ cinza - #E2E2E2 */
 
 /*** CONFIGURAÇÃO GERAL (FIM) ***/
 
-/*** SEÇÃO CARTÃO (INICIO) ***/
+/*** SEÇÃO CARTÃO (INÍCIO) ***/
 
 .container-cartao {
     display: grid;
@@ -27,7 +23,7 @@ cinza - #E2E2E2 */
 .container-cartao > h2 {
     order: -1;
     margin: 2em 1em 15px 1em;
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: end;
 }
 
@@ -41,7 +37,7 @@ cinza - #E2E2E2 */
     color: white;
     order: 2;
     text-align: justify;
-    margin: 0 25px 10px 15px;
+    margin: 0 25px 0 15px;
     order: 0;
     height: fit-content;
 }
@@ -54,7 +50,7 @@ cinza - #E2E2E2 */
     border: none;
     font-weight: bold;
     align-self: flex-end;
-    margin: 30px 25px 30px 0;
+    margin: 15px 25px 30px 0;
     transition: all 2s ease;
 }
 
@@ -70,10 +66,13 @@ cinza - #E2E2E2 */
     grid-column-end: 3;
 }
 
+.f4bank-cartao {
+    font-weight: bold;
+}
+
 /*** SEÇÃO CARTÃO (FIM) ***/
 
-/*** FOOTER INÍCIO (INICIO) ***/
-
+/*** FOOTER (INÍCIO) ***/
 
 footer {
     background-color: #FF914D;
@@ -173,12 +172,16 @@ ul {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
-/*** SEÇÃO CARTÃO RESPONSIVO (INICIO) ***/
+/*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
 
 .container-cartao {
     display: flex;
     flex-direction: column;
     background-color: #FFBD59;
+}
+
+.container-cartao > h2 {
+    font-size: 1.7em;
 }
 
 .img-cartao {
@@ -197,7 +200,7 @@ ul {
 
 /*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
 
-/*** FOOTER RESPONSIVO (INICIO) ***/
+/*** FOOTER RESPONSIVO (INÍCIO) ***/
 
 footer {
     display: flex;
@@ -230,5 +233,12 @@ footer {
     margin: 20px 0 60px 90px;
 }
 
-
 /*** FOOTER RESPONSIVO (FIM) ***/
+
+/*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
+
+.copyright {
+    font-size: small;
+}
+
+/*** COPYRIGHT RESPONSIVO (FIM) ***/
