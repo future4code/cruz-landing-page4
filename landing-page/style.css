@@ -56,6 +56,10 @@ html, body{
     font-size: 1.5em;
 }
 
+.descricao span {
+    font-weight: bold;
+}
+
 .botao {
     margin: 20px 10px;
     width: 200px;
@@ -181,7 +185,12 @@ html, body{
     .descricao {
         width: 300px;
         height: 520px;
+        padding: 5px;
         border: 1px solid #FF914D;
+    }
+
+    .descricao span {
+        font-weight: bold;
     }
 
     .descricao .botão {
@@ -202,6 +211,7 @@ html, body{
         width: 300px;
         height: 480px;
         margin: 40px;
+        padding: 12px;
         border: 1px solid #FFBD59;
     }
 
