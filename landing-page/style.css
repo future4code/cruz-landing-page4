@@ -1,4 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	width: 100%;
+	margin: 0;
+	background: #FF914D;
+	display: flex;
+	padding: 20px 0 20px 0;
+	align-items: center;
+}
+
+#menu-responsivo,
+#menu {
+	display: none;
+}
+
+.logo {
+	width: 30%;
+	text-align: center;
+}
+
+.logo img {
+	max-width: 100px
+}
+
+.menu {
+	flex: 3;
+	font-family: 20px;
+	text-align: right;
+}
+
+.menu a {
+	margin: 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.menu a:hover {
+	box-shadow: inset 0 -0.40em #FFBD59;
+	transition: all 2s ease;
+}
+
+.menu ul li {
+	display: inline;
+}
+
+.menu li {
+	list-style: none
+}
+
+.login {
+	flex: 1;
+	text-align: center;
+}
+
+.login a {
+	background: #FFBD59;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	transition: all 2s ease;
+}
+
+.login a:hover {
+	background: #FF914D;
+}
+
+#bloco1 {
+	background: #E0E0E0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.esq {
+	width: 40%;
+	text-align: center;
+	padding: 10px 0 0 0;
+	display: flex;
+	align-items: flex-end;
+}
+
+.dir {
+	width: 35%;
+	padding: 5%;
+	text-align: left;
+}
+
+.botao {
+	margin: 30px 0 30px 0;
+}
+
+.botao a {
+	background: #FF914D;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	transition: all 2s ease;
+}
+
+.botao a:hover {
+	background: #FFBD59;
+}
+
+@media (min-width:300px) and (max-width:1050px) {
+	nav {
+		padding: 0;
+		margin: 0;
+	}
+	.menu,
+	.login {
+		display: none;
+	}
+	#menu-responsivo,
+	#menu {
+		display: block;
+	}
+	#menu-responsivo {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	#menu-responsivo a {
+		color: black;
+		font-size: 20px;
+		padding: 10px;
+	}
+	.menu-abre {
+		width: 50%;
+		min-height: 80px;
+		position: fixed;
+		right: 0;
+		background: #FFBD59;
+		color: white;
+		padding: 10px;
+	}
+	.fundo {
+		position: fixed;
+		bottom: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.fundo:target {
+		visibility: visible;
+		opacity: 1;
+	}
+	.menu-abre .fecha {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		font-size: 50px;
+		color: black;
+		font-size: 40px;
+		text-decoration: none;
+	}
+	.menu-abre li {
+		list-style: none
+	}
+	.menu-abre a {
+		color: white;
+		line-height: 40px;
+		text-decoration: none;
+		font-weight: 400;
+	}
+	.login-responsivo a {
+		background: #FF914D;
+		padding: 5px;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+		transition: all 2s ease;
+	}
+	.login-responsivo a:hover {
+		background: #FFBD59;
+	}
+	#bloco1 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.esq {
+		width: 96%;
+		padding: 2%;
+		text-align: center;
+		margin: 0;
+	}
+	.esq img {
+		max-width: 90%;
+	}
+	.dir {
+		width: 94%;
+		padding: 3%;
+		margin: 0;
+		text-align: center;
+	}
+}
 
 * {
     width: 100%;
@@ -462,4 +672,5 @@ footer {
 }
 
 /*** COPYRIGHT RESPONSIVO (FIM) ***/
+
 
