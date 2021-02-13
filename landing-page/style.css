@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    font-weight: 400;
 }
 
 html, body{
@@ -166,7 +167,164 @@ html, body{
     color: #fff;
     transition: 0.5s;
 }
+  
+/*** SEÇÃO CARTÃO (INÍCIO) ***/
 
+.container-cartao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFBD59;
+}
+
+.container-cartao > h2 {
+    order: -1;
+    margin: 2em 1em 15px 1em;
+    font-size: 2em;
+    text-align: end;
+}
+
+.div-botao-cartao-e-texto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-cartao {
+    color: white;
+    order: 2;
+    text-align: justify;
+    margin: 0 25px 0 15px;
+    order: 0;
+    height: fit-content;
+}
+
+.button-cartao {
+    color: #FFFFFF;
+    background-color: #FF914D;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 15px 25px 30px 0;
+    transition: all 2s ease;
+}
+
+.button-cartao:hover {
+    background-color: #FF914D;
+}
+
+.img-cartao {
+    width: 100%;
+    order: 0;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+.f4bank-cartao {
+    font-weight: bold;
+}
+
+/*** SEÇÃO CARTÃO (FIM) ***/
+
+/*** FOOTER (INÍCIO) ***/
+
+footer {
+    background-color: #FF914D;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #FFFFFF;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+}
+
+footer > div > p:first-child{
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.titulo-institucional {
+    width: 5em;
+    border-bottom: 3px solid #FFBD59;
+    padding-bottom: 8px;
+}
+.texto-footer {
+    text-align: left;
+}
+
+.titulo-atendimento {
+    width: 6em;
+    border-bottom: 3px solid #FFBD59;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+.div-apps {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-apps > a > img {
+    width: 28%;
+}
+
+.first-icon-footer {
+    border-top: 3px solid #FFBD59;
+    padding: 15px 0 4px 0;
+}
+
+.texto-tel {
+    margin-bottom: 15px;
+}
+
+.container-footer:first-child {
+    text-align: center;
+}
+
+.container-institucional {
+    margin-left: 60px;
+}
+
+.container-institucional > ul > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icones-redes-sociais {
+    margin: 10px;
+}
+
+.icones-redes-sociais > a > i {
+    color: white;
+    background-color: #FFBD59;
+    border-radius: 50%;
+    font-size: 1.1em;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(55, 54, 54);
+    text-align: center;
+    margin-right: 5px;
+}
+
+.copyright {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** FOOTER (FIM) ***/
 
 /* Responsivo Mobile */
 
@@ -231,3 +389,77 @@ html, body{
     }
     
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+
+/*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
+
+.container-cartao {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBD59;
+}
+
+.container-cartao > h2 {
+    font-size: 1.7em;
+}
+
+.img-cartao {
+    order: 1;
+}
+
+.container-cartao > h2 {
+    order: 2;
+    margin: 1.2em 1em 0 1em;
+}
+
+.div-botao-cartao-e-texto {
+    margin-top: 30px;
+    order: 3;
+}
+
+/*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
+
+/*** FOOTER RESPONSIVO (INÍCIO) ***/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container-footer {
+    width: 100vw;
+    margin: 25px 10px;
+}
+
+.container-institucional {
+    width: 17em;
+}
+
+.container-canais-atendimento,
+.titulo-atendimento {
+    margin-top: 10px;
+}
+
+.titulo-atendimento {
+    width: 11.9em;
+}
+
+.div-apps {
+    margin: 20px 0 60px 90px;
+}
+
+/*** FOOTER RESPONSIVO (FIM) ***/
+
+/*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
+
+.copyright {
+    font-size: small;
+}
+
+/*** COPYRIGHT RESPONSIVO (FIM) ***/
+
