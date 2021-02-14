@@ -537,34 +537,34 @@ nav {
 
 }
 
-/*** SEÇÃO CARTÃO (INÍCIO) ***/
+/*** SEÇÃO CARTÃO DE CRÉDITO (INÍCIO) ***/
 
-.container-cartao { /* CRIA DUAS COLUNAS DE MESMA DIMENSÃO COM GRID, FAZENDO A IMAGEM SEMPRE PREENCHER O CONTAINER */
+.container-cartao { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FFBD59;
     align-items: stretch;
 }
 
-.container-cartao > h2 { /* CRIA MARGEM PARA O TÍTULO, AUMENTA A FONTE E ALINHA À ESQUERDA */
+.container-cartao > h2 {
     margin: 2em 1em 15px 1em;
     font-size: 2em;
     text-align: end;
 }
 
-.div-botao-cartao-e-texto { /* ALINHA O BOTÃO À ESQUERDA E CRIA MARGEM EM TODOS OS LADOS */
+.div-botao-cartao-e-texto {
     display: flex;
     flex-direction: column;
     margin: 10px 10px 20px 30px;
 }
 
-.texto-cartao { /* JUSTIFICA E ALINHA AS MARGENS LATERAIS DO TEXTO DO BLOCO CARTÃO */
+.texto-cartao { 
     color: white;
     text-align: justify;
     margin: 0 25px 0 15px;
 }
 
-.button-cartao { /* ESTILIZA O BOTÃO */
+.button-cartao {
     color: #FFFFFF;
     background-color: #FF914D;
     border-radius: 10px;
@@ -576,22 +576,22 @@ nav {
     transition: all 2s ease;
 }
 
-.button-cartao:hover { /* CRIA HOVER PARA O BOTÃO */
+.button-cartao:hover { 
     background-color: #FF914D;
 }
 
-.img-cartao { /* DIZ À IMAGEM AONDE COMEÇAR E TERMINAR NO CONTAINER */
+.img-cartao { 
     width: 100%;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-end: 3;
 }
 
-/*** SEÇÃO CARTÃO (FIM) ***/
+/*** SEÇÃO CARTÃO DE CRÉDITO (FIM) ***/
 
 /*** FOOTER (INÍCIO) ***/
 
-footer { /* CRIA O FOOTER COM 4 COLUNAS DE MESMA DIMENSÃO COM GRID */
+footer {
     background-color: #FF914D;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -600,71 +600,71 @@ footer { /* CRIA O FOOTER COM 4 COLUNAS DE MESMA DIMENSÃO COM GRID */
     padding: 30px 30px 30px 30px;
 }
 
-.img-logo-footer { /* DEFINE UMA DIMENSÃO PARA A IMAGEM DO LOGO DO BANCO */
+.img-logo-footer { 
     width: 50%;
 }
 
-footer > div > p:first-child { /* ESTILIZA OS TÍTULOS DAS SEÇÕES DO FOOTER  */
+footer > div > p:first-child { 
     color: #000000;
     margin-bottom: 10px;
     font-weight: 500;
     text-align: left;
 }
 
-.titulo-institucional { /* CRIA A BARRINHA INFERIOR DO TÍTULO INSTITUCIONAL */
+.titulo-institucional {
     width: 5em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
 }
 
-.titulo-atendimento { /* CRIA A BARRINHA INFERIOR DO TÍTULO CANAIS DE ATENDIMENTO E ALINHA À ESQUERDA */
+.titulo-atendimento { 
     width: 6em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
     text-align: left;
 }
 
-ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA */
+ul { 
     list-style: none;
     text-align: left;
 }
 
-.div-apps { /* COLOCA OS ÍCONES DA SEÇÃO "NOSSO APP" EM COLUNA COM FLEX*/
+.div-apps { 
     display: flex;
     flex-direction: column;
 }
 
-.div-apps > a > img { /* DEFINE UM TAMANHO PARA AS IMAGENS DA SEÇÃO "NOSSO APP" */
+.div-apps > a > img { 
     width: 30%;
 }
 
-.first-icon-footer { /* CRIA A BARRINHA INFERIOR DA SEÇÃO "NOSSO APP" */
+.first-icon-footer { 
     border-top: 3px solid #FFBD59;
     padding: 15px 0 4px 0;
 }
 
-.texto-tel { /* CRIA ESPAÇO ENTRE OS 2 TEXTOS DA SEÇÃO "CANAIS DE ATENDIMENTO*/
+.texto-tel { 
     margin-bottom: 15px;
 }
 
-.container-footer:first-child { /* CENTRALIZA TODOS OS ELEMENTOS NA COLUNA DO LOGO */
+.container-footer:first-child { 
     text-align: center;
 }
 
-.container-institucional { /* CRIA MARGEM NA SEÇÃO INSTITUCIONAL */
+.container-institucional { 
     margin-left: 60px;
 }
 
-.container-institucional > ul > a { /* ESTILIZA TODOS OS LINKS */
+.container-institucional > ul > a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.icones-redes-sociais { /* AUMENTA A MARGEM TOP DOS ÍCONES DAS REDES SOCIAIS */
+.icones-redes-sociais {
     margin-top: 5px;
 }
 
-.icones-redes-sociais > a > i { /* ESTILIZA OS ÍCONES DAS REDES SOCIAIS */
+.icones-redes-sociais > a > i { 
     color: white; 
     background-color: #FFBD59;
     border-radius: 50%;
@@ -677,7 +677,7 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
     margin-right: 5px;
 }
 
-.copyright { /* ESTILIZA A BARRA DE COPYRIGHT */
+.copyright { 
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -691,33 +691,33 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
 
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
-    /*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
+    /*** SEÇÃO CARTÃO DE CRÉDITO RESPONSIVO (INÍCIO) ***/
     
-    .container-cartao { /* MUDA A ESTRUTURA DO BLOCO CARTÃO PARA COLUNA COM FLEX */
+    .container-cartao {
         display: flex;
         flex-direction: column;
         background-color: #FFBD59;
     }
     
-    .container-cartao > h2 { /* DIMINUI O FONT-SIZE DO TÍTULO DO CARTÃO */
+    .container-cartao > h2 { /
         font-size: 1.7em;
     }
     
-    .container-cartao > h2 { /* DEFINE A ORDEM DO TÍTULO DO CARTÃO COMO "SEGUNDA POSIÇÃO" E CRIA MARGEM */
+    .container-cartao > h2 {
         order: 2;
         margin: 1.2em 1em 0 1em;
     }
     
-    .div-botao-cartao-e-texto { /* DEFINE A ORDEM DO TEXTO COMO "TERCEIRA POSIÇÃO" E CRIA MARGEM */
+    .div-botao-cartao-e-texto { 
         margin-top: 30px;
         order: 3;
     }
     
-    /*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
+    /*** SEÇÃO CARTÃO DE CRÉDITO RESPONSIVO (FIM) ***/
     
     /*** FOOTER RESPONSIVO (INÍCIO) ***/
     
-    footer { /* MUDA A ESTRUTURA DO FOOTER PARA COLUNA COM FLEX */
+    footer { 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -726,37 +726,36 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
         padding: 0;
     }
     
-    .img-logo-footer { /* AUMENTA O TAMANHO DO LOGO */
+    .img-logo-footer { 
         width: 60%;
     }
     
-    .container-footer { /* DEFINE A VIEWPORT COMO 100VW E CRIA MARGEM*/
-        width: 100vw;
+    .container-footer { 
         margin: 25px 10px;
     }
     
-    .container-footer > div > p { /* AUMENTA O TAMANHO DA FONTE DOS PARÁGRAFOS*/
+    .container-footer > div > p { 
         font-size: large;
         margin-bottom: 15px;
     }
     
-    .button-cartao { /* CRIA MARGEM PARA O BOTÃO */
+    .button-cartao {
         margin-top: 35px;
         margin-bottom: 25px;
     }
     
-    .container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
+    .container-institucional { 
         width: 17em;
         font-size: large;
     }
     
-    .container-canais-atendimento, /* CRIA MARGEM E AUMENTA A FONTE DO TÍTULO E CONTAINER DA SEÇÃO CANAIS DE ATENDIMENTO */
+    .container-canais-atendimento, 
     .titulo-atendimento {
         margin-top: 10px;
         font-size: large;
     }
     
-    .div-apps { /* CRIA MARGEM E AUMENTA A FONTE DA SEÇÃO "NOSSO APP" */
+    .div-apps { 
         margin: 20px 0 40px 64px;
         font-size: large;
     }
@@ -765,7 +764,7 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
     
     /*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
     
-    .copyright { /* DIMINUE A FONTE DA BARRA DE COPYRIGHT */
+    .copyright { 
         font-size: small;
     }
     
