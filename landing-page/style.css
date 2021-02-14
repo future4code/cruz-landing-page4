@@ -3,6 +3,7 @@
 * {
     /*width: 100%;*/
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
     font-weight: 400;
@@ -12,7 +13,7 @@ html, body{
     overflow-x: hidden;
 }
 
-nav {
+nav { /* MENU TOPO  */
 	width: 100%;
 	margin: 0;
 	background: #FF914D;
@@ -22,11 +23,11 @@ nav {
 }
 
 #menu-responsivo,
-#menu {
+#menu { /* ESCONDE MENU MOBILE */
 	display: none;
 }
 
-.logo {
+.logo { /* ALINHA O LOGO */
 	width: 30%;
 	text-align: center;
 }
@@ -35,7 +36,7 @@ nav {
 	max-width: 100px
 }
 
-.menu {
+.menu { /* TXT MENU TOPO */
 	flex: 3;
 	font-family: 20px;
 	text-align: right;
@@ -46,6 +47,7 @@ nav {
 	color: white;
 	text-decoration: none;
 	font-weight: 400;
+    font-size: 1.2em;
 }
 
 .menu a:hover {
@@ -79,16 +81,18 @@ nav {
 	background: #FF914D;
 }
 
-#bloco1 {
+.bloco1 { /* SEÇÃO 1 SITE */
 	background: #E0E0E0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+    align-items: center;
 	flex-wrap: wrap;
+    padding: 30px 0 0 0;
 }
 
-.esq {
+.esq { /* ALINHA A ESQ */
 	width: 40%;
 	text-align: center;
 	padding: 10px 0 0 0;
@@ -96,18 +100,39 @@ nav {
 	align-items: flex-end;
 }
 
-.dir {
-	width: 35%;
-	padding: 5%;
+.dir { /* ALINHA A DIR */
+	width: 55%;
+	padding: 3%;
 	text-align: left;
 }
 
-.botao {
+.dir h1 {/* H1 SEÇÃO1*/
+	font-size: 2em;
+	margin-bottom: 20px;}
+
+.dir p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.botao { /* ESTILO BOTAO*/
 	margin: 30px 0 30px 0;
+    width: 200px;
+    background: #FF914D;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    transition: all 2s ease;
+    font-size: 1em;
+    border: none;
+    align-self: flex-end;
+    text-align: center;
+
 }
 
 .botao a {
 	background: #FF914D;
+
 	padding: 10px;
 	border-radius: 10px;
 	color: white;
@@ -120,29 +145,29 @@ nav {
 }
 
 @media (min-width:300px) and (max-width:1050px) {
-	nav {
+	nav { /* ALINHA MENU MOBILE */
 		padding: 0;
 		margin: 0;
 	}
 	.menu,
-	.login {
+	.login { /* ESCONDE MENU E LOGIN DESKTOP */
 		display: none;
 	}
 	#menu-responsivo,
-	#menu {
+	#menu { /* MENU MOBILE */
 		display: block;
 	}
-	#menu-responsivo {
+	#menu-responsivo { /* BOTAO MENU */
 		position: absolute;
 		right: 20px;
 		top: 20px;
 	}
-	#menu-responsivo a {
+	#menu-responsivo a { /* BOTAO MENU */
 		color: black;
 		font-size: 20px;
 		padding: 10px;
 	}
-	.menu-abre {
+	.menu-abre { /* POP UP MENU */
 		width: 50%;
 		min-height: 80px;
 		position: fixed;
@@ -151,7 +176,7 @@ nav {
 		color: white;
 		padding: 10px;
 	}
-	.fundo {
+	.fundo { /* ESCONDE POP UP MENU */
 		position: fixed;
 		bottom: 0;
 		top: 0;
@@ -160,11 +185,11 @@ nav {
 		visibility: hidden;
 		opacity: 0;
 	}
-	.fundo:target {
+	.fundo:target { /* TORNA VISIVEL POP UP MENU */
 		visibility: visible;
 		opacity: 1;
 	}
-	.menu-abre .fecha {
+	.menu-abre .fecha { /* BOTÃO FECHAR POP UP MENU */
 		position: absolute;
 		top: 20px;
 		right: 30px;
@@ -173,10 +198,10 @@ nav {
 		font-size: 40px;
 		text-decoration: none;
 	}
-	.menu-abre li {
+	.menu-abre li { /* MENU POP UP */
 		list-style: none
 	}
-	.menu-abre a {
+	.menu-abre a { 
 		color: white;
 		line-height: 40px;
 		text-decoration: none;
@@ -193,33 +218,44 @@ nav {
 	.login-responsivo a:hover {
 		background: #FFBD59;
 	}
-	#bloco1 {
+	#bloco1 { /* ALINHA SEÇÃO 1 MOBILE */
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	.esq {
+	.esq { /* ALINHA SEÇÃO 1 MOBILE */
 		width: 96%;
 		padding: 2%;
 		text-align: center;
 		margin: 0;
 	}
-	.esq img {
+	.esq img { /* ALINHA SEÇÃO 1 MOBILE */
 		max-width: 90%;
 	}
-	.dir {
+	.dir { /* ALINHA SEÇÃO 1 MOBILE */
 		width: 94%;
 		padding: 3%;
+        padding-bottom: 30px;
 		margin: 0;
 		text-align: center;
 	}
+
+    .dir h1 {
+        text-align: left;
+        margin: 10px 0 20px 0;
+    }
+
+   .dir p {
+       text-align: justify;
+   }
 }
 
 /* Bloco 2 */
 
 .bloco-2 {
     display: flex;
-    height: 80vh;
+    /* height: 70vh; */
+    padding-bottom: 60px;
     background-color: #FFBD59;
 }
 
@@ -238,7 +274,7 @@ nav {
 }
 
 .descricao {
-    width: 500px;
+    width: 50%;
     height: 20vh;
     margin: 90px auto;
     /* border: 1px solid black; */
@@ -252,18 +288,12 @@ nav {
     font-size: 2em;
 }
 
-.descricao p {
-    margin: 10px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.5em;
-}
-
 /* Bloco 3 */
 
 .bloco-3 {
     display: flex;
-    height: 90vh;
+    /* height: 90vh; */
+    padding: 90px 0;
     background-color: #FF914D;
     align-items: center;
 }
@@ -296,15 +326,15 @@ nav {
 .bloco-3 .descricao-2 p {
     margin: 0 10px;
     font-weight: 400;
-    font-size: 1.25em;
-    color: #E2E2E2;
+    font-size: 1.3em;
+    color: #EEEEEE;
 }
 
 /* Bloco 5 */
 
 .bloco-5 {
     /* display: flex; */
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(255, 235, 179);
     text-align: center;
 }
@@ -317,12 +347,12 @@ nav {
 }
 
 .postagem-blog {
-    height: 400px;
+    /* height: 400px; */
     width: 28%;
     display: inline-block;
     text-align: center;
-    margin: 100px 20px;
-    padding: 10px;
+    margin: 80px 20px;
+    /* padding: 10px; */
     /* border: 1px solid black; */
 }
 
@@ -340,7 +370,7 @@ nav {
     margin: 10px;
     color: #fff;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .postagem-blog p {
@@ -362,8 +392,8 @@ nav {
     transition: 0.5s;
 }
       
-.botao {
-    margin: 20px 10px;
+.botao-conta-corrente {
+    margin: 20px 0;
     width: 200px;
     background: #FF914D;
     padding:10px;
@@ -371,106 +401,13 @@ nav {
     color:white;
     transition: all 2s ease;
     font-size: 1em;
+    border: none;
+    align-self: flex-end;
+    text-align: center;
 }
 
 .botao:hover {
     background: #FFBD59;
-}
-
-/* Bloco 3 */
-
-.bloco-3 {
-    display: flex;
-    height: 90vh;
-    background-color: #FF914D;
-    align-items: center;
-}
-
-.bloco-3 img {
-    width: 250px;
-    height: 250px;
-    margin: 0 60px;
-    border-radius: 50%;
-}
-
-.bloco-3 .descricao-2 {
-    width: 600px;
-    height: 250px;
-    margin: -10px 100px;
-    /* border: 1px solid black; */
-    text-align: start;
-}
-
-.bloco-3 .descricao-2 h1 {
-    margin: 10px;
-    font-weight: 400;
-    font-size: 2em;
-}
-
-.bloco-3 .descricao-2 h1:last-child {
-    color: #fff;
-}
-
-.bloco-3 .descricao-2 p {
-    margin: 0 10px;
-    font-weight: 400;
-    font-size: 1.25em;
-    color: #E2E2E2;
-}
-
-/* Bloco 5 */
-
-.bloco-5 {
-    /* display: flex; */
-    height: 100vh;
-    background-color: rgb(255, 235, 179);
-    text-align: center;
-}
-
-.bloco-5 h1 {
-    padding-top: 80px;
-    /* border: 1px solid black; */
-    font-weight: 400;
-    font-size: 2em;
-}
-
-.postagem-blog {
-    height: 400px;
-    width: 28%;
-    display: inline-block;
-    text-align: center;
-    margin: 100px 20px;
-    padding: 10px;
-    /* border: 1px solid black; */
-}
-
-.postagem-blog img {
-    width: 130px;
-}
-
-.postagem-blog h3 {
-    margin: 20px 0;
-    font-weight: 400;
-    font-size: 1.5em;
-}
-
-.postagem-blog p {
-    padding: 0 30px;
-}
-
-.postagem-blog button {
-    width: 200px;
-    height: 30px;
-    margin: 20px 0;
-    font-size: 1em;
-    border: none;
-    border-bottom: 2px solid orange;
-}
-
-.postagem-blog button:hover {
-    background-color: orange;
-    color: #fff;
-    transition: 0.5s;
 }
 
 /* Responsivo Mobile */
@@ -514,12 +451,16 @@ nav {
 
     .bloco-5 {
         display: grid;
-        height: 320vh;
+        /* height: 320vh; */
+    }
+
+    .bloco-5 h1 {
+        padding: 60px 0 40px 0;
     }
 
     .bloco-5 .postagem-blog {
         width: 300px;
-        margin: 0 40px;
+        margin: 20px 40px;
         height: 500px;
         border: 1px solid #FFBD59;
     }
@@ -537,61 +478,63 @@ nav {
 
 }
 
-/*** SEÇÃO CARTÃO (INÍCIO) ***/
+/*** SEÇÃO CARTÃO DE CRÉDITO (INÍCIO) ***/
 
-.container-cartao { /* CRIA DUAS COLUNAS DE MESMA DIMENSÃO COM GRID, FAZENDO A IMAGEM SEMPRE PREENCHER O CONTAINER */
+.container-cartao { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FFBD59;
     align-items: stretch;
 }
 
-.container-cartao > h2 { /* CRIA MARGEM PARA O TÍTULO, AUMENTA A FONTE E ALINHA À ESQUERDA */
+.container-cartao > h2 {
     margin: 2em 1em 15px 1em;
     font-size: 2em;
     text-align: end;
 }
 
-.div-botao-cartao-e-texto { /* ALINHA O BOTÃO À ESQUERDA E CRIA MARGEM EM TODOS OS LADOS */
+.div-botao-cartao-e-texto {
     display: flex;
     flex-direction: column;
     margin: 10px 10px 20px 30px;
 }
 
-.texto-cartao { /* JUSTIFICA E ALINHA AS MARGENS LATERAIS DO TEXTO DO BLOCO CARTÃO */
+.texto-cartao { 
     color: white;
     text-align: justify;
     margin: 0 25px 0 15px;
+    font-size: 1.3em;
 }
 
-.button-cartao { /* ESTILIZA O BOTÃO */
+.button-cartao {
     color: #FFFFFF;
+    width: 200px;
     background-color: #FF914D;
     border-radius: 10px;
     padding: 10px;
     border: none;
-    font-weight: 600;
+    font-size: 1em;
     align-self: flex-end;
     margin: 15px 25px 30px 0;
     transition: all 2s ease;
 }
 
-.button-cartao:hover { /* CRIA HOVER PARA O BOTÃO */
+.button-cartao:hover { 
     background-color: #FF914D;
 }
 
-.img-cartao { /* DIZ À IMAGEM AONDE COMEÇAR E TERMINAR NO CONTAINER */
+.img-cartao { 
     width: 100%;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-end: 3;
 }
 
-/*** SEÇÃO CARTÃO (FIM) ***/
+/*** SEÇÃO CARTÃO DE CRÉDITO (FIM) ***/
 
 /*** FOOTER (INÍCIO) ***/
 
-footer { /* CRIA O FOOTER COM 4 COLUNAS DE MESMA DIMENSÃO COM GRID */
+footer {
     background-color: #FF914D;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -600,71 +543,71 @@ footer { /* CRIA O FOOTER COM 4 COLUNAS DE MESMA DIMENSÃO COM GRID */
     padding: 30px 30px 30px 30px;
 }
 
-.img-logo-footer { /* DEFINE UMA DIMENSÃO PARA A IMAGEM DO LOGO DO BANCO */
+.img-logo-footer { 
     width: 50%;
 }
 
-footer > div > p:first-child { /* ESTILIZA OS TÍTULOS DAS SEÇÕES DO FOOTER  */
+footer > div > p:first-child { 
     color: #000000;
     margin-bottom: 10px;
     font-weight: 500;
     text-align: left;
 }
 
-.titulo-institucional { /* CRIA A BARRINHA INFERIOR DO TÍTULO INSTITUCIONAL */
+.titulo-institucional {
     width: 5em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
 }
 
-.titulo-atendimento { /* CRIA A BARRINHA INFERIOR DO TÍTULO CANAIS DE ATENDIMENTO E ALINHA À ESQUERDA */
+.titulo-atendimento { 
     width: 6em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
     text-align: left;
 }
 
-ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA */
+ul { 
     list-style: none;
     text-align: left;
 }
 
-.div-apps { /* COLOCA OS ÍCONES DA SEÇÃO "NOSSO APP" EM COLUNA COM FLEX*/
+.div-apps { 
     display: flex;
     flex-direction: column;
 }
 
-.div-apps > a > img { /* DEFINE UM TAMANHO PARA AS IMAGENS DA SEÇÃO "NOSSO APP" */
+.div-apps > a > img { 
     width: 30%;
 }
 
-.first-icon-footer { /* CRIA A BARRINHA INFERIOR DA SEÇÃO "NOSSO APP" */
+.first-icon-footer { 
     border-top: 3px solid #FFBD59;
     padding: 15px 0 4px 0;
 }
 
-.texto-tel { /* CRIA ESPAÇO ENTRE OS 2 TEXTOS DA SEÇÃO "CANAIS DE ATENDIMENTO*/
+.texto-tel { 
     margin-bottom: 15px;
 }
 
-.container-footer:first-child { /* CENTRALIZA TODOS OS ELEMENTOS NA COLUNA DO LOGO */
+.container-footer:first-child { 
     text-align: center;
 }
 
-.container-institucional { /* CRIA MARGEM NA SEÇÃO INSTITUCIONAL */
+.container-institucional { 
     margin-left: 60px;
 }
 
-.container-institucional > ul > a { /* ESTILIZA TODOS OS LINKS */
+.container-institucional > ul > a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.icones-redes-sociais { /* AUMENTA A MARGEM TOP DOS ÍCONES DAS REDES SOCIAIS */
+.icones-redes-sociais {
     margin-top: 5px;
 }
 
-.icones-redes-sociais > a > i { /* ESTILIZA OS ÍCONES DAS REDES SOCIAIS */
+.icones-redes-sociais > a > i { 
     color: white; 
     background-color: #FFBD59;
     border-radius: 50%;
@@ -677,7 +620,7 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
     margin-right: 5px;
 }
 
-.copyright { /* ESTILIZA A BARRA DE COPYRIGHT */
+.copyright { 
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -691,33 +634,33 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
 
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
-    /*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
+    /*** SEÇÃO CARTÃO DE CRÉDITO RESPONSIVO (INÍCIO) ***/
     
-    .container-cartao { /* MUDA A ESTRUTURA DO BLOCO CARTÃO PARA COLUNA COM FLEX */
+    .container-cartao {
         display: flex;
         flex-direction: column;
         background-color: #FFBD59;
     }
     
-    .container-cartao > h2 { /* DIMINUI O FONT-SIZE DO TÍTULO DO CARTÃO */
+    .container-cartao > h2 { /
         font-size: 1.7em;
     }
     
-    .container-cartao > h2 { /* DEFINE A ORDEM DO TÍTULO DO CARTÃO COMO "SEGUNDA POSIÇÃO" E CRIA MARGEM */
+    .container-cartao > h2 {
         order: 2;
         margin: 1.2em 1em 0 1em;
     }
     
-    .div-botao-cartao-e-texto { /* DEFINE A ORDEM DO TEXTO COMO "TERCEIRA POSIÇÃO" E CRIA MARGEM */
+    .div-botao-cartao-e-texto { 
         margin-top: 30px;
         order: 3;
     }
     
-    /*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
+    /*** SEÇÃO CARTÃO DE CRÉDITO RESPONSIVO (FIM) ***/
     
     /*** FOOTER RESPONSIVO (INÍCIO) ***/
     
-    footer { /* MUDA A ESTRUTURA DO FOOTER PARA COLUNA COM FLEX */
+    footer { 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -726,37 +669,36 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
         padding: 0;
     }
     
-    .img-logo-footer { /* AUMENTA O TAMANHO DO LOGO */
-        width: 60%;
+    .img-logo-footer { 
+        width: 100%;
     }
     
-    .container-footer { /* DEFINE A VIEWPORT COMO 100VW E CRIA MARGEM*/
-        width: 100vw;
+    .container-footer { 
         margin: 25px 10px;
     }
     
-    .container-footer > div > p { /* AUMENTA O TAMANHO DA FONTE DOS PARÁGRAFOS*/
+    .container-footer > div > p { 
         font-size: large;
         margin-bottom: 15px;
     }
     
-    .button-cartao { /* CRIA MARGEM PARA O BOTÃO */
+    .button-cartao {
         margin-top: 35px;
         margin-bottom: 25px;
     }
     
-    .container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
+    .container-institucional { 
         width: 17em;
         font-size: large;
     }
     
-    .container-canais-atendimento, /* CRIA MARGEM E AUMENTA A FONTE DO TÍTULO E CONTAINER DA SEÇÃO CANAIS DE ATENDIMENTO */
+    .container-canais-atendimento, 
     .titulo-atendimento {
         margin-top: 10px;
         font-size: large;
     }
     
-    .div-apps { /* CRIA MARGEM E AUMENTA A FONTE DA SEÇÃO "NOSSO APP" */
+    .div-apps { 
         margin: 20px 0 40px 64px;
         font-size: large;
     }
@@ -765,7 +707,7 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
     
     /*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
     
-    .copyright { /* DIMINUE A FONTE DA BARRA DE COPYRIGHT */
+    .copyright { 
         font-size: small;
     }
     
