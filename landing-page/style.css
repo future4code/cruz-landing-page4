@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
 
 * {
-    /* width: 100%; */
-<<<<<<< HEAD
-=======
+    /*width: 100%;*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-body {
-	font-family: 'Poppins', sans-serif;
-	margin: 0;
-	padding: 0;
+html, body{
+    overflow-x: hidden;
 }
 
 nav {
@@ -215,20 +215,6 @@ nav {
 	}
 }
 
-* {
-    /*width: 100%;*/
->>>>>>> c1a4f0c75ba213cbddba0fdbd49b69da623c85fb
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    font-weight: 400;
-}
-
-html, body{
-    overflow-x: hidden;
-}
-
 /* Bloco 2 */
 
 .bloco-2 {
@@ -271,21 +257,6 @@ html, body{
     color: #fff;
     font-weight: 400;
     font-size: 1.5em;
-}
-
-.botao {
-    margin: 20px 10px;
-    width: 200px;
-    background: #FF914D;
-    padding:10px;
-    border-radius:10px;
-    color:white;
-    transition: all 2s ease;
-    font-size: 1em;
-}
-
-.botao:hover {
-    background: #FFBD59;
 }
 
 /* Bloco 3 */
@@ -388,7 +359,8 @@ html, body{
 .postagem-blog button:hover {
     background-color: orange;
     color: #fff;
-    transition: 0.5s
+    transition: 0.5s;
+}
       
 .botao {
     margin: 20px 10px;
@@ -499,6 +471,70 @@ html, body{
     background-color: orange;
     color: #fff;
     transition: 0.5s;
+}
+
+/* Responsivo Mobile */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    /* Bloco 2 */
+
+    .bloco-2 {
+        display: grid;
+        height: 160vh;
+    }
+
+    .descricao {
+        width: 300px;
+        height: 520px;
+        border: 1px solid #FF914D;
+    }
+
+    .descricao .botão {
+        width: 150px;
+        height: 30px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    /* bloco 3 */
+
+    .bloco-3 {
+        display: grid;
+        height: 150vh;
+    }
+
+    .bloco-3 .descricao-2 {
+        width: 300px;
+        height: 480px;
+        margin: 40px;
+        border: 1px solid #FFBD59;
+    }
+
+    /* Bloco 5 */
+
+    .bloco-5 {
+        display: grid;
+        height: 320vh;
+    }
+
+    .bloco-5 .postagem-blog {
+        width: 300px;
+        margin: 0 40px;
+        height: 500px;
+        border: 1px solid #FFBD59;
+    }
+
+    .bloco-5 .postagem-blog p {
+        padding: 0 8px;
+        font-size: 1em;
+    }
+
+    .bloco-5 .postagem-blog button {
+        width: 150px;
+        height: 30px;
+        font-size: 17px;
+    }
+
 }
 
 /*** SEÇÃO CARTÃO (INÍCIO) ***/
@@ -653,161 +689,84 @@ ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA 
 
 /*** FOOTER (FIM) ***/
 
-/* Responsivo Mobile */
-
-@media screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    /* Bloco 2 */
-
-    .bloco-2 {
-        display: grid;
-        height: 160vh;
-    }
-
-    .descricao {
-        width: 300px;
-        height: 520px;
-        border: 1px solid #FF914D;
-    }
-
-    .descricao .botão {
-        width: 150px;
-        height: 30px;
-        margin-bottom: 10px;
-        font-size: 17px;
-    }
-
-    /* bloco 3 */
-
-    .bloco-3 {
-        display: grid;
-        height: 150vh;
-    }
-
-    .bloco-3 .descricao-2 {
-        width: 300px;
-        height: 480px;
-        margin: 40px;
-        border: 1px solid #FFBD59;
-    }
-
-    /* Bloco 5 */
-
-    .bloco-5 {
-        display: grid;
-        height: 320vh;
-    }
-
-    .bloco-5 .postagem-blog {
-        width: 300px;
-        margin: 0 40px;
-        height: 500px;
-        border: 1px solid #FFBD59;
-    }
-
-    .bloco-5 .postagem-blog p {
-        padding: 0 8px;
-        font-size: 1em;
-    }
-
-    .bloco-5 .postagem-blog button {
-        width: 150px;
-        height: 30px;
-        font-size: 17px;
-    }
-<<<<<<< HEAD
-
-}
-=======
->>>>>>> c1a4f0c75ba213cbddba0fdbd49b69da623c85fb
-
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
-/*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
-
-.container-cartao { /* MUDA A ESTRUTURA DO BLOCO CARTÃO PARA COLUNA COM FLEX */
-    display: flex;
-    flex-direction: column;
-    background-color: #FFBD59;
-}
-
-.container-cartao > h2 { /* DIMINUI O FONT-SIZE DO TÍTULO DO CARTÃO */
-    font-size: 1.7em;
-}
-
-.container-cartao > h2 { /* DEFINE A ORDEM DO TÍTULO DO CARTÃO COMO "SEGUNDA POSIÇÃO" E CRIA MARGEM */
-    order: 2;
-    margin: 1.2em 1em 0 1em;
-}
-
-.div-botao-cartao-e-texto { /* DEFINE A ORDEM DO TEXTO COMO "TERCEIRA POSIÇÃO" E CRIA MARGEM */
-    margin-top: 30px;
-    order: 3;
-}
-
-/*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
-
-/*** FOOTER RESPONSIVO (INÍCIO) ***/
-
-footer { /* MUDA A ESTRUTURA DO FOOTER PARA COLUNA COM FLEX */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.img-logo-footer { /* AUMENTA O TAMANHO DO LOGO */
-    width: 60%;
-}
-
-.container-footer { /* DEFINE A VIEWPORT COMO 100VW E CRIA MARGEM*/
-    width: 100vw;
-    margin: 25px 10px;
-}
-
-.container-footer > div > p { /* AUMENTA O TAMANHO DA FONTE DOS PARÁGRAFOS*/
-    font-size: large;
-    margin-bottom: 15px;
-}
-
-.button-cartao { /* CRIA MARGEM PARA O BOTÃO */
-    margin-top: 35px;
-    margin-bottom: 25px;
-<<<<<<< HEAD
-}
-
-.container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
-    width: 17em;
-    font-size: large;
-}
-
-=======
-}
-
-.container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
-    width: 17em;
-    font-size: large;
-}
-
->>>>>>> c1a4f0c75ba213cbddba0fdbd49b69da623c85fb
-.container-canais-atendimento, /* CRIA MARGEM E AUMENTA A FONTE DO TÍTULO E CONTAINER DA SEÇÃO CANAIS DE ATENDIMENTO */
-.titulo-atendimento {
-    margin-top: 10px;
-    font-size: large;
-}
-
-.div-apps { /* CRIA MARGEM E AUMENTA A FONTE DA SEÇÃO "NOSSO APP" */
-    margin: 20px 0 40px 64px;
-    font-size: large;
-}
-
-/*** FOOTER RESPONSIVO (FIM) ***/
-
-/*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
-
-.copyright { /* DIMINUE A FONTE DA BARRA DE COPYRIGHT */
-    font-size: small;
-}
-
-/*** COPYRIGHT RESPONSIVO (FIM) ***/
+    /*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
+    
+    .container-cartao { /* MUDA A ESTRUTURA DO BLOCO CARTÃO PARA COLUNA COM FLEX */
+        display: flex;
+        flex-direction: column;
+        background-color: #FFBD59;
+    }
+    
+    .container-cartao > h2 { /* DIMINUI O FONT-SIZE DO TÍTULO DO CARTÃO */
+        font-size: 1.7em;
+    }
+    
+    .container-cartao > h2 { /* DEFINE A ORDEM DO TÍTULO DO CARTÃO COMO "SEGUNDA POSIÇÃO" E CRIA MARGEM */
+        order: 2;
+        margin: 1.2em 1em 0 1em;
+    }
+    
+    .div-botao-cartao-e-texto { /* DEFINE A ORDEM DO TEXTO COMO "TERCEIRA POSIÇÃO" E CRIA MARGEM */
+        margin-top: 30px;
+        order: 3;
+    }
+    
+    /*** SEÇÃO CARTÃO RESPONSIVO (FIM) ***/
+    
+    /*** FOOTER RESPONSIVO (INÍCIO) ***/
+    
+    footer { /* MUDA A ESTRUTURA DO FOOTER PARA COLUNA COM FLEX */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .img-logo-footer { /* AUMENTA O TAMANHO DO LOGO */
+        width: 60%;
+    }
+    
+    .container-footer { /* DEFINE A VIEWPORT COMO 100VW E CRIA MARGEM*/
+        width: 100vw;
+        margin: 25px 10px;
+    }
+    
+    .container-footer > div > p { /* AUMENTA O TAMANHO DA FONTE DOS PARÁGRAFOS*/
+        font-size: large;
+        margin-bottom: 15px;
+    }
+    
+    .button-cartao { /* CRIA MARGEM PARA O BOTÃO */
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    
+    .container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
+        width: 17em;
+        font-size: large;
+    }
+    
+    .container-canais-atendimento, /* CRIA MARGEM E AUMENTA A FONTE DO TÍTULO E CONTAINER DA SEÇÃO CANAIS DE ATENDIMENTO */
+    .titulo-atendimento {
+        margin-top: 10px;
+        font-size: large;
+    }
+    
+    .div-apps { /* CRIA MARGEM E AUMENTA A FONTE DA SEÇÃO "NOSSO APP" */
+        margin: 20px 0 40px 64px;
+        font-size: large;
+    }
+    
+    /*** FOOTER RESPONSIVO (FIM) ***/
+    
+    /*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
+    
+    .copyright { /* DIMINUE A FONTE DA BARRA DE COPYRIGHT */
+        font-size: small;
+    }
+    
+    /*** COPYRIGHT RESPONSIVO (FIM) ***/
