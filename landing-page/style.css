@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
 
+* {
+    /* width: 100%; */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 body {
@@ -211,7 +214,7 @@ nav {
 }
 
 * {
-    width: 100%;
+    /*width: 100%;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -220,7 +223,7 @@ nav {
 }
 
 html, body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* Bloco 2 */
@@ -356,6 +359,123 @@ html, body{
 .postagem-blog h3 {
     margin: 20px 0;
     font-weight: 400;
+    font-size: 2em;
+}
+
+.descricao p {
+    margin: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.postagem-blog p {
+    padding: 0 30px;
+}
+
+.postagem-blog button {
+    width: 200px;
+    height: 30px;
+    margin: 20px 0;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid orange;
+}
+
+.postagem-blog button:hover {
+    background-color: orange;
+    color: #fff;
+    transition: 0.5s
+      
+.botao {
+    margin: 20px 10px;
+    width: 200px;
+    background: #FF914D;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    transition: all 2s ease;
+    font-size: 1em;
+}
+
+.botao:hover {
+    background: #FFBD59;
+}
+
+/* Bloco 3 */
+
+.bloco-3 {
+    display: flex;
+    height: 90vh;
+    background-color: #FF914D;
+    align-items: center;
+}
+
+.bloco-3 img {
+    width: 250px;
+    height: 250px;
+    margin: 0 60px;
+    border-radius: 50%;
+}
+
+.bloco-3 .descricao-2 {
+    width: 600px;
+    height: 250px;
+    margin: -10px 100px;
+    /* border: 1px solid black; */
+    text-align: start;
+}
+
+.bloco-3 .descricao-2 h1 {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.bloco-3 .descricao-2 h1:last-child {
+    color: #fff;
+}
+
+.bloco-3 .descricao-2 p {
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #E2E2E2;
+}
+
+/* Bloco 5 */
+
+.bloco-5 {
+    /* display: flex; */
+    height: 100vh;
+    background-color: rgb(255, 235, 179);
+    text-align: center;
+}
+
+.bloco-5 h1 {
+    padding-top: 80px;
+    /* border: 1px solid black; */
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.postagem-blog {
+    height: 400px;
+    width: 28%;
+    display: inline-block;
+    text-align: center;
+    margin: 100px 20px;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.postagem-blog img {
+    width: 130px;
+}
+
+.postagem-blog h3 {
+    margin: 20px 0;
+    font-weight: 400;
     font-size: 1.5em;
 }
 
@@ -380,67 +500,59 @@ html, body{
   
 /*** SEÇÃO CARTÃO (INÍCIO) ***/
 
-.container-cartao {
+.container-cartao { /* CRIA DUAS COLUNAS DE MESMA DIMENSÃO COM GRID, FAZENDO A IMAGEM SEMPRE PREENCHER O CONTAINER */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FFBD59;
+    align-items: stretch;
 }
 
-.container-cartao > h2 {
-    order: -1;
+.container-cartao > h2 { /* CRIA MARGEM PARA O TÍTULO, AUMENTA A FONTE E ALINHA À ESQUERDA */
     margin: 2em 1em 15px 1em;
     font-size: 2em;
     text-align: end;
 }
 
-.div-botao-cartao-e-texto {
-    margin-bottom: 20px;
+.div-botao-cartao-e-texto { /* ALINHA O BOTÃO À ESQUERDA E CRIA MARGEM EM TODOS OS LADOS */
     display: flex;
     flex-direction: column;
+    margin: 10px 10px 20px 30px;
 }
 
-.texto-cartao {
+.texto-cartao { /* JUSTIFICA E ALINHA AS MARGENS LATERAIS DO TEXTO DO BLOCO CARTÃO */
     color: white;
-    order: 2;
     text-align: justify;
     margin: 0 25px 0 15px;
-    order: 0;
-    height: fit-content;
 }
 
-.button-cartao {
+.button-cartao { /* ESTILIZA O BOTÃO */
     color: #FFFFFF;
     background-color: #FF914D;
     border-radius: 10px;
     padding: 10px;
     border: none;
-    font-weight: bold;
+    font-weight: 600;
     align-self: flex-end;
     margin: 15px 25px 30px 0;
     transition: all 2s ease;
 }
 
-.button-cartao:hover {
+.button-cartao:hover { /* CRIA HOVER PARA O BOTÃO */
     background-color: #FF914D;
 }
 
-.img-cartao {
+.img-cartao { /* DIZ À IMAGEM AONDE COMEÇAR E TERMINAR NO CONTAINER */
     width: 100%;
-    order: 0;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-end: 3;
-}
-
-.f4bank-cartao {
-    font-weight: bold;
 }
 
 /*** SEÇÃO CARTÃO (FIM) ***/
 
 /*** FOOTER (INÍCIO) ***/
 
-footer {
+footer { /* CRIA O FOOTER COM 4 COLUNAS DE MESMA DIMENSÃO COM GRID */
     background-color: #FF914D;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -449,70 +561,72 @@ footer {
     padding: 30px 30px 30px 30px;
 }
 
-footer > div > p:first-child{
+.img-logo-footer { /* DEFINE UMA DIMENSÃO PARA A IMAGEM DO LOGO DO BANCO */
+    width: 50%;
+}
+
+footer > div > p:first-child { /* ESTILIZA OS TÍTULOS DAS SEÇÕES DO FOOTER  */
     color: #000000;
-    font-weight: bold;
     margin-bottom: 10px;
+    font-weight: 500;
     text-align: left;
 }
 
-.titulo-institucional {
+.titulo-institucional { /* CRIA A BARRINHA INFERIOR DO TÍTULO INSTITUCIONAL */
     width: 5em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
 }
-.texto-footer {
-    text-align: left;
-}
 
-.titulo-atendimento {
+.titulo-atendimento { /* CRIA A BARRINHA INFERIOR DO TÍTULO CANAIS DE ATENDIMENTO E ALINHA À ESQUERDA */
     width: 6em;
     border-bottom: 3px solid #FFBD59;
     padding-bottom: 8px;
+    text-align: left;
 }
 
-ul {
+ul { /* TIRA AS BOLINHAS DA LISTA NA SEÇÃO INSTITUCIONAL E ALINHA À ESQUERDA */
     list-style: none;
     text-align: left;
 }
 
-.div-apps {
+.div-apps { /* COLOCA OS ÍCONES DA SEÇÃO "NOSSO APP" EM COLUNA COM FLEX*/
     display: flex;
     flex-direction: column;
 }
 
-.div-apps > a > img {
-    width: 28%;
+.div-apps > a > img { /* DEFINE UM TAMANHO PARA AS IMAGENS DA SEÇÃO "NOSSO APP" */
+    width: 30%;
 }
 
-.first-icon-footer {
+.first-icon-footer { /* CRIA A BARRINHA INFERIOR DA SEÇÃO "NOSSO APP" */
     border-top: 3px solid #FFBD59;
     padding: 15px 0 4px 0;
 }
 
-.texto-tel {
+.texto-tel { /* CRIA ESPAÇO ENTRE OS 2 TEXTOS DA SEÇÃO "CANAIS DE ATENDIMENTO*/
     margin-bottom: 15px;
 }
 
-.container-footer:first-child {
+.container-footer:first-child { /* CENTRALIZA TODOS OS ELEMENTOS NA COLUNA DO LOGO */
     text-align: center;
 }
 
-.container-institucional {
+.container-institucional { /* CRIA MARGEM NA SEÇÃO INSTITUCIONAL */
     margin-left: 60px;
 }
 
-.container-institucional > ul > a {
+.container-institucional > ul > a { /* ESTILIZA TODOS OS LINKS */
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.icones-redes-sociais {
-    margin: 10px;
+.icones-redes-sociais { /* AUMENTA A MARGEM TOP DOS ÍCONES DAS REDES SOCIAIS */
+    margin-top: 5px;
 }
 
-.icones-redes-sociais > a > i {
-    color: white;
+.icones-redes-sociais > a > i { /* ESTILIZA OS ÍCONES DAS REDES SOCIAIS */
+    color: white; 
     background-color: #FFBD59;
     border-radius: 50%;
     font-size: 1.1em;
@@ -524,7 +638,7 @@ ul {
     margin-right: 5px;
 }
 
-.copyright {
+.copyright { /* ESTILIZA A BARRA DE COPYRIGHT */
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -597,33 +711,27 @@ ul {
         height: 30px;
         font-size: 17px;
     }
-    
-}
 
 @media screen and (min-device-width: 320px) and (max-device-width: 420px) {
 
 /*** SEÇÃO CARTÃO RESPONSIVO (INÍCIO) ***/
 
-.container-cartao {
+.container-cartao { /* MUDA A ESTRUTURA DO BLOCO CARTÃO PARA COLUNA COM FLEX */
     display: flex;
     flex-direction: column;
     background-color: #FFBD59;
 }
 
-.container-cartao > h2 {
+.container-cartao > h2 { /* DIMINUI O FONT-SIZE DO TÍTULO DO CARTÃO */
     font-size: 1.7em;
 }
 
-.img-cartao {
-    order: 1;
-}
-
-.container-cartao > h2 {
+.container-cartao > h2 { /* DEFINE A ORDEM DO TÍTULO DO CARTÃO COMO "SEGUNDA POSIÇÃO" E CRIA MARGEM */
     order: 2;
     margin: 1.2em 1em 0 1em;
 }
 
-.div-botao-cartao-e-texto {
+.div-botao-cartao-e-texto { /* DEFINE A ORDEM DO TEXTO COMO "TERCEIRA POSIÇÃO" E CRIA MARGEM */
     margin-top: 30px;
     order: 3;
 }
@@ -632,7 +740,7 @@ ul {
 
 /*** FOOTER RESPONSIVO (INÍCIO) ***/
 
-footer {
+footer { /* MUDA A ESTRUTURA DO FOOTER PARA COLUNA COM FLEX */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -641,36 +749,47 @@ footer {
     padding: 0;
 }
 
-.container-footer {
+.img-logo-footer { /* AUMENTA O TAMANHO DO LOGO */
+    width: 60%;
+}
+
+.container-footer { /* DEFINE A VIEWPORT COMO 100VW E CRIA MARGEM*/
     width: 100vw;
     margin: 25px 10px;
 }
 
-.container-institucional {
-    width: 17em;
+.container-footer > div > p { /* AUMENTA O TAMANHO DA FONTE DOS PARÁGRAFOS*/
+    font-size: large;
+    margin-bottom: 15px;
 }
 
-.container-canais-atendimento,
+.button-cartao { /* CRIA MARGEM PARA O BOTÃO */
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.container-institucional { /* AUMENTA O TAMANHO DO CONTAINER INSTITUCIONAL */
+    width: 17em;
+    font-size: large;
+}
+
+.container-canais-atendimento, /* CRIA MARGEM E AUMENTA A FONTE DO TÍTULO E CONTAINER DA SEÇÃO CANAIS DE ATENDIMENTO */
 .titulo-atendimento {
     margin-top: 10px;
+    font-size: large;
 }
 
-.titulo-atendimento {
-    width: 11.9em;
-}
-
-.div-apps {
-    margin: 20px 0 60px 90px;
+.div-apps { /* CRIA MARGEM E AUMENTA A FONTE DA SEÇÃO "NOSSO APP" */
+    margin: 20px 0 40px 64px;
+    font-size: large;
 }
 
 /*** FOOTER RESPONSIVO (FIM) ***/
 
 /*** COPYRIGHT RESPONSIVO (INÍCIO) ***/
 
-.copyright {
+.copyright { /* DIMINUE A FONTE DA BARRA DE COPYRIGHT */
     font-size: small;
 }
 
 /*** COPYRIGHT RESPONSIVO (FIM) ***/
-
-
