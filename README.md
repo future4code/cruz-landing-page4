@@ -8,3 +8,11 @@ Desenvolvedores:
 - Alexandra Alcantara
 - Jessica Quirino
 - Paulo Oliveira
+
+## Versão Desktop
+
+![Screenshot 2021-02-18 122032](https://user-images.githubusercontent.com/57108685/108378765-11337800-71e4-11eb-9d7f-18e583dbf743.png)
+
+## Versão Mobile
+
+![Screenshot 2021-02-18 122214](https://user-images.githubusercontent.com/57108685/108378777-1264a500-71e4-11eb-8f10-ec501b152aad.png)
